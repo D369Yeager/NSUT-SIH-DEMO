@@ -8,15 +8,29 @@
 - **Category:** Software
 - **Theme:** Smart Governance / Skill Development
 
-## 2. Problem Statement
+## 2. Team
+
+**Team Name:** Runtime Terror
+**Branch:** CSAI
+
+| Name | Role | Enrollment No. | Email |
+|---|---|---|---|
+| Arav Sharma | Team Leader | 2025UCA1937 | aravsharma.28.2007@gmail.com |
+| Gourav Kumar | Member | 2025UCA1962 | gouravkumar78278@gmail.com |
+| Aditya Prakash | Member | 2025UCA1942 | adijuly11@gmail.com |
+| Tanush Sharma | Member | 2025UCA1920 | sharma.tanush@gmail.com |
+| Vanya Kapoor | Member | 2025UCA1940 | vanyakapoor1010@gmail.com |
+| Gunvir Singh | Member | 2025UCA1915 | reachapple303a@gmail.com |
+
+## 3. Problem Statement
 
 Government officials often lack visibility into their own competency gaps against their role benchmarks, and training content is not personalized to close those gaps. Creating assessments from training material is manual and slow, making it hard to verify learning outcomes at scale.
 
-## 3. Proposed Solution
+## 4. Proposed Solution
 
 SI reads an official's competency profile, compares it against a role benchmark across multiple domains, and recommends real courses tagged to the domains with the biggest gaps. It also lets admins upload any training document (PDF/DOCX) and instantly generates a structured AI quiz from it using Gemini — turning static training material into assessable content in seconds.
 
-## 4. Key Features
+## 5. Key Features
 
 - Profile → Gap Analysis: compares an official's competency scores against a role benchmark across 4 domains
 - Gap → Course Match: recommends real courses tied to the weakest domains, with "why this course" reasoning
@@ -24,7 +38,7 @@ SI reads an official's competency profile, compares it against a role benchmark 
 - Two role-based experiences: Learner (readiness score, recommended courses, skill profile) and Admin (quiz generation, org-wide competency insights, department drill-down)
 - Org-wide analytics dashboard for admins
 
-## 5. Technology Stack
+## 6. Technology Stack
 
 - Frontend: React, Vite, Tailwind CSS
 - Backend: Python, FastAPI
@@ -32,9 +46,9 @@ SI reads an official's competency profile, compares it against a role benchmark 
 - Database: SQLite (auto-seeded)
 - Deployment: Vercel (frontend), Render (backend)
 
-## 6. Architecture
+## 7. Architecture
 
-​```text
+\`\`\`text
 User (Learner / Admin)
   |
   v
@@ -50,11 +64,11 @@ Gemini AI (quiz generation)
   |
   v
 Gap Analysis / Course Recommendations / Generated Quiz
-​```
+\`\`\`
 
-## 7. Repository Structure
+## 8. Repository Structure
 
-​```text
+\`\`\`text
 NSUT-SIH-DEMO/
 ├── README.md
 ├── submission/
@@ -71,25 +85,25 @@ NSUT-SIH-DEMO/
 ├── requirements.txt
 ├── .gitignore
 └── LICENSE
-​```
+\`\`\`
 
-## 8. Final Presentation
+## 9. Final Presentation
 
 See [submission/PRESENTATION.md](submission/PRESENTATION.md).
 
-## 9. Demo Video
+## 10. Demo Video
 
 See [submission/DEMO.md](submission/DEMO.md).
 
-## 10. Screenshots / Prototype Photos
+## 11. Screenshots / Prototype Photos
 
 ![Learner Homepage](assets/screenshots/01-learner-homepage.png)
 ![Learner's Course Track](assets/screenshots/02-learner-track.png)
 ![Admin Quiz Generation](assets/screenshots/03-admin-quiz-generation.png)
 
-## 11. Installation
+## 12. Installation
 
-​```bash
+\`\`\`bash
 git clone https://github.com/D369Yeager/NSUT-SIH-DEMO.git
 cd NSUT-SIH-DEMO
 
@@ -100,17 +114,17 @@ pip install -r requirements.txt
 # Frontend
 cd ../frontend
 npm install
-​```
+\`\`\`
 
-## 12. Run
+## 13. Run
 
-​```bash
+\`\`\`bash
 # Backend (from backend/)
 uvicorn main:app --reload
 
 # Frontend (from frontend/)
 npm run dev
-​```
+\`\`\`
 
 **Live deployment:**
 - Frontend: https://sih26101-mvp.vercel.app
@@ -120,7 +134,7 @@ npm run dev
 - Learner — username: `anita`, password: `demo123`
 - Admin — username: `priya`, password: `admin123`
 
-## 13. Future Scope
+## 14. Future Scope
 
 - Expand competency domains beyond the current 4 to cover role-specific specializations
 - Add analytics export (PDF/CSV reports) for department-level insights
