@@ -34,7 +34,7 @@ SI reads an official's competency profile, compares it against a role benchmark 
 
 ## 6. Architecture
 
-\`\`\`text
+​```text
 User (Learner / Admin)
   |
   v
@@ -50,11 +50,11 @@ Gemini AI (quiz generation)
   |
   v
 Gap Analysis / Course Recommendations / Generated Quiz
-\`\`\`
+​```
 
 ## 7. Repository Structure
 
-\`\`\`text
+​```text
 NSUT-SIH-DEMO/
 ├── README.md
 ├── submission/
@@ -71,7 +71,7 @@ NSUT-SIH-DEMO/
 ├── requirements.txt
 ├── .gitignore
 └── LICENSE
-\`\`\`
+​```
 
 ## 8. Final Presentation
 
@@ -89,7 +89,7 @@ See [submission/DEMO.md](submission/DEMO.md).
 
 ## 11. Installation
 
-\`\`\`bash
+​```bash
 git clone https://github.com/D369Yeager/NSUT-SIH-DEMO.git
 cd NSUT-SIH-DEMO
 
@@ -100,17 +100,17 @@ pip install -r requirements.txt
 # Frontend
 cd ../frontend
 npm install
-\`\`\`
+​```
 
 ## 12. Run
 
-\`\`\`bash
+​```bash
 # Backend (from backend/)
 uvicorn main:app --reload
 
 # Frontend (from frontend/)
 npm run dev
-\`\`\`
+​```
 
 **Live deployment:**
 - Frontend: https://sih26101-mvp.vercel.app
@@ -126,3 +126,7 @@ npm run dev
 - Add analytics export (PDF/CSV reports) for department-level insights
 - Support additional document formats and richer quiz question types (not just MCQ)
 - Add notification/reminder system to nudge learners toward closing skill gaps
+
+## Important
+
+Before submission, make sure the repository is accessible to reviewers. Do **not** upload passwords, API keys, access tokens, `.env` files containing secrets, or other confidential credentials.
