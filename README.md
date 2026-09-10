@@ -97,9 +97,9 @@ See [submission/DEMO.md](submission/DEMO.md).
 
 ## 11. Screenshots / Prototype Photos
 
-![Learner Homepage](assets/screenshots/01-learner-homepage.png)
-![Learner's Course Track](assets/screenshots/02-learner-track.png)
-![Admin Quiz Generation](assets/screenshots/03-admin-quiz-generation.png)
+![Learner's Homepage](assets/screenshots/02-Learner's-Homepage.png)
+![Learner's Course Track](assets/screenshots/03-Learner's-Track.png)
+![Admin Quiz Generation](assets/screenshots/05-Admin-Quiz-Generation.png)
 
 ## 12. Installation
 
