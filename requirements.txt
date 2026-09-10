@@ -1,2 +1,9 @@
 fastapi
 uvicorn
+sqlalchemy
+python-multipart
+pydantic
+google-generativeai
+python-docx
+pypdf
+python-dotenv

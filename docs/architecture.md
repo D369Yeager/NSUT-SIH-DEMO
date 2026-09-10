@@ -3,21 +3,21 @@
 ## High-level flow
 
 ```text
-User
+User (Learner / Admin)
   |
   v
-Frontend
+Frontend (React + Vite, Tailwind CSS)
   |
   v
-Backend API
+Backend API (FastAPI)
   |
-  +------------------> Database
-  |
-  v
-Machine Learning Model
+  +------------------> Database (SQLite)
   |
   v
-Prediction / Result
+Gemini AI (quiz generation from uploaded documents)
+  |
+  v
+Gap Analysis / Course Recommendations / Generated Quiz
   |
   v
 Frontend
@@ -26,17 +26,27 @@ Frontend
 ## Components
 
 ### Frontend
-Handles user interaction, input collection, and display of results.
+Built with React + Vite and styled with Tailwind CSS. Provides two role-based experiences:
+- **Learner view** — readiness score, recommended courses, skill profile with gap bars, quiz-taking interface
+- **Admin view** — document upload for quiz generation, org-wide competency insights, department drill-down
 
 ### Backend API
-Receives requests, validates input, and coordinates application logic.
-
-### Machine Learning Model
-Processes the input data and generates a prediction.
+Built with FastAPI. Handles authentication (role-based: Learner/Admin), serves competency and course data, processes document uploads, and coordinates calls to the Gemini AI service.
 
 ### Database
-Stores application data such as users, submissions, or prediction history.
+SQLite, auto-seeded on startup. Stores user profiles, competency scores per domain, course catalog, quiz data, and quiz attempt history.
 
-## For your own project
+### Gemini AI (Quiz Generation)
+Receives an uploaded document (PDF/DOCX) along with a selected competency domain, and generates a structured MCQ quiz — including correct answers and explanations — in seconds.
 
-Update this document to show the actual components and data flow of your project. A hardware project can replace these components with sensors, microcontrollers, communication modules, cloud services, and actuators as appropriate.
+### Gap Analysis Engine
+Compares a Learner's competency scores against a role benchmark across 4 domains, tagging each domain as "Ready" or "Gap."
+
+### Course Recommendation Engine
+Matches Learners to real courses tagged to whichever domains show the biggest gaps, with reasoning for why each course was recommended.
+
+## Deployment
+
+- Frontend hosted on **Vercel**
+- Backend API hosted on **Render**
+
