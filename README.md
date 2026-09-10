@@ -48,7 +48,7 @@ SI reads an official's competency profile, compares it against a role benchmark 
 
 ## 7. Architecture
 
-\`\`\`text
+```text
 User (Learner / Admin)
   |
   v
@@ -64,11 +64,11 @@ Gemini AI (quiz generation)
   |
   v
 Gap Analysis / Course Recommendations / Generated Quiz
-\`\`\`
+```
 
 ## 8. Repository Structure
 
-\`\`\`text
+```text
 NSUT-SIH-DEMO/
 ├── README.md
 ├── submission/
@@ -85,7 +85,7 @@ NSUT-SIH-DEMO/
 ├── requirements.txt
 ├── .gitignore
 └── LICENSE
-\`\`\`
+```
 
 ## 9. Final Presentation
 
@@ -103,7 +103,7 @@ See [submission/DEMO.md](submission/DEMO.md).
 
 ## 12. Installation
 
-\`\`\`bash
+```bash
 git clone https://github.com/D369Yeager/NSUT-SIH-DEMO.git
 cd NSUT-SIH-DEMO
 
@@ -114,17 +114,17 @@ pip install -r requirements.txt
 # Frontend
 cd ../frontend
 npm install
-\`\`\`
+```
 
 ## 13. Run
 
-\`\`\`bash
+```bash
 # Backend (from backend/)
 uvicorn main:app --reload
 
 # Frontend (from frontend/)
 npm run dev
-\`\`\`
+```
 
 **Live deployment:**
 - Frontend: https://sih26101-mvp.vercel.app
